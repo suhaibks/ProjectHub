@@ -11,6 +11,13 @@ const firebaseConfig = {
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
   measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
+  apiKey: 'AIzaSyBdj9PlMGJf3bao66mGdBDvX66UzdqR2bk',
+  authDomain: 'projecthub-a6659.firebaseapp.com',
+  projectId: 'projecthub-a6659',
+  storageBucket: 'projecthub-a6659.firebasestorage.app',
+  messagingSenderId: '119058414301',
+  appId: '1:119058414301:web:b351dc5dfa0285f230b934',
+  measurementId: 'G-6QZBBDY0FM',
 };
 
 const requiredConfigKeys = ['apiKey', 'authDomain', 'projectId', 'appId'];

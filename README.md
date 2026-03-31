@@ -28,6 +28,7 @@ npm run validate:package
 ```
 
 5. Build command is already configured to validate env vars before building:
+4. Build command is already configured to validate env vars before building:
 
 ```bash
 npm run build
