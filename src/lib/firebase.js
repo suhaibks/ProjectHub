@@ -17,13 +17,11 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-let analytics = null;
-if (typeof window !== 'undefined') {
-  isSupported().then((supported) => {
-    if (supported) {
-      analytics = getAnalytics(app);
-    }
-  });
-}
+const analyticsPromise =
+  typeof window !== 'undefined'
+    ? isSupported()
+        .then((supported) => (supported ? getAnalytics(app) : null))
+        .catch(() => null)
+    : Promise.resolve(null);
 
-export { app, auth, db, analytics };
+export { app, auth, db, analyticsPromise };
