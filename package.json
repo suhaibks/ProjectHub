@@ -5,6 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "npm run check:env && vite build",
+    "preview": "vite preview",
+    "test": "echo \"No tests configured\"",
+    "check:env": "node scripts/validate-env.mjs"
     "build": "vite build",
     "preview": "vite preview",
     "test": "echo \"No tests configured\""
@@ -19,5 +23,8 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.4.1",
     "vite": "^5.4.19"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
