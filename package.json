@@ -9,6 +9,9 @@
     "preview": "vite preview",
     "test": "echo \"No tests configured\"",
     "check:env": "node scripts/validate-env.mjs"
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"No tests configured\""
   },
   "dependencies": {
     "firebase": "^12.11.0",
