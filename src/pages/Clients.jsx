@@ -11,7 +11,7 @@ import {
   where,
 } from 'firebase/firestore';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth, db } from '../firebase';
+import { auth, db } from '../lib/firebase';
 
 export default function Clients() {
   const [user] = useAuthState(auth);

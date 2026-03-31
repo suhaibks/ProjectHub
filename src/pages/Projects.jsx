@@ -12,7 +12,7 @@ import {
   where,
 } from 'firebase/firestore';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth, db } from '../firebase';
+import { auth, db } from '../lib/firebase';
 
 const statusOptions = ['pending', 'in-progress', 'completed'];
 
