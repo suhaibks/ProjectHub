@@ -21,6 +21,13 @@ vercel env add VITE_FIREBASE_MEASUREMENT_ID
 vercel env pull .env.local
 ```
 
+4. Validate package metadata before pushing/deploying:
+
+```bash
+npm run validate:package
+```
+
+5. Build command is already configured to validate env vars before building:
 4. Build command is already configured to validate env vars before building:
 
 ```bash
